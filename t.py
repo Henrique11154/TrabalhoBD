@@ -21,6 +21,7 @@ for registro in myresult:
     print(i ,"-"  , registro[0])
     i = i + 1
 
+print("-----Pesquisa-------")
 
 print("Escolha uma tabela")
 tabela = input()
@@ -40,13 +41,14 @@ for registro2 in myresult2:
 
 print("Escolha uma coluna que deseja pesquisar.")
 coluna = input()
-print("Digite o que deseja pesquisar, (favor informe se é numero ou palavra)")
+print("favor informe se é numero ou palavra.")
 o = input() #opcao
 
 if o == "numero":
-    
+    print("Digite sua pesquisa:")
     pes = int(input()) #pesquisa
 else:
+    print("Digite sua pesquisa:")
     pes = input()
 
 mycursor3 = mydb.cursor()
